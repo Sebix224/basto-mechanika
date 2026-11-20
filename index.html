@@ -74,6 +74,8 @@ header{position:sticky;top:0;z-index:40;background:rgba(17,19,22,.92);backdrop-f
 .g2{width:42%;height:42%;right:4%;bottom:4%;color:#3a3f47;animation:rot 12s linear infinite reverse}
 .g3{width:24%;height:24%;right:8%;top:6%;color:#575d66;animation:rot 9s linear infinite}
 @keyframes rot{to{transform:rotate(360deg)}}
+.hero-photo{position:absolute;inset:3% 13% 13% 3%;border-radius:22px;background:var(--hero) center/cover no-repeat,#22262c;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);border:2px solid rgba(255,255,255,.08)}
+.gears .g1{display:none}
 
 /* Usługi */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -229,6 +231,7 @@ footer{text-align:center;padding:28px 0;color:var(--muted);font-size:.88rem;bord
       <div class="facts"><div><b>Wycena</b><span>przed naprawą</span></div><div><b>Online</b><span>zapis na termin</span></div><div><b>Ustroń</b><span>ul. Krzywa 4b</span></div></div>
     </div>
     <div class="gears" aria-hidden="true">
+      <div class="hero-photo" style="--hero:url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&h=800&q=70')"></div>
       <div class="gear g1"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="26" stroke-dasharray="22 18.84"/><circle cx="100" cy="100" r="62" fill="currentColor"/><circle cx="100" cy="100" r="24" fill="#111316"/></svg></div>
       <div class="gear g2"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width="30" stroke-dasharray="24 23.75"/><circle cx="100" cy="100" r="60" fill="currentColor"/><circle cx="100" cy="100" r="22" fill="#111316"/></svg></div>
       <div class="gear g3"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="74" fill="none" stroke="currentColor" stroke-width="32" stroke-dasharray="28 30.1"/><circle cx="100" cy="100" r="56" fill="currentColor"/><circle cx="100" cy="100" r="22" fill="#111316"/></svg></div>
